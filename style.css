@@ -556,6 +556,21 @@ form input{
     height: 100%;
     width: 100%;
 }
+.news-image{
+    position: relative;
+}
+.save{
+    padding: 30px 20px;
+    width: 17rem;
+    transform: rotate(-19.628deg);
+    border-radius: 10.569px;
+    background: #FF5400;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 5rem;
+    left: 19rem;
+}
 /* medium  */
 @media screen and (min-width: 601px) and (max-width:991px) {
     .news-letter-section{
