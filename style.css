@@ -255,7 +255,6 @@ form input{
     padding: 20px;
 }
 
-
 .destin-image-a{
     grid-area: destin-image-a;
 }
@@ -283,7 +282,6 @@ form input{
 .destin-image{
     width: 100%;
     display: grid;
-    
     grid-template-areas: 
         "destin-image-a destin-image-b"
         "destin-image-c destin-image-d destin-image-e"
@@ -294,24 +292,48 @@ form input{
 /* medium */
 @media screen and (min-width: 601px) and (max-width:991px) {
     .destin-image{
-        grid-template-columns: 1fr;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+            "destin-image-a"
+            "destin-image-b"
+            "destin-image-c"
+            "destin-image-d" 
+            "destin-image-e"
+            "destin-image-f"
+            "destin-image-g"
+        ;
     }
     .discount-image img{
         width: 100%;
-        max-width: 599px;
+    }
+    .destin-image-a, .destin-image-b, .destin-image-c, .destin-image-d, .destin-image-e, .destin-image-f, .destin-image-g{
+        width: 100%;
     }
 }
 /* responsive for small device */
 @media screen and (max-width:600px) {
     .destin-image{
-        grid-template-columns: 1fr;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+            "destin-image-a"
+            "destin-image-b"
+            "destin-image-c"
+            "destin-image-d" 
+            "destin-image-e"
+            "destin-image-f"
+            "destin-image-g"
+        ;
     }
     .discount-image img{
         width: 100%;
-        max-width: 599px;
     }
-
+    .destin-image-a, .destin-image-b, .destin-image-c, .destin-image-d, .destin-image-e, .destin-image-f, .destin-image-g{
+        width: 100%;
+    }
 }
+
 
 
 
