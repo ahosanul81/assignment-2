@@ -71,12 +71,28 @@ nav ul li a{
     font-family: 'Mulish', sans-serif;
 }
 
-/* responsive for large device */
-@media screen and (min-width:992px) {
-    
+/* responsive for medium device */
+@media screen and (min-width: 601px) and (max-width:991px) {
+    body{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
 }
 
+/* responsive for small device */
 @media screen and (max-width: 600px) {
+    body{
+        padding: 20px;
+    }
     nav{
         flex-direction: column;
         width: 100%;
@@ -140,7 +156,20 @@ form input{
     border-radius: 4px;
     border: none;
 }
-/* responsive for large device */
+/* responsive for medium device */
+@media screen and (min-width: 601px) and (max-width:991px) {
+    form input{
+        width: 50%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        width: 100%;
+
+    }
+}
 /* responsive for small device */
 @media screen and (max-width:600px) {
     form input{
@@ -188,7 +217,18 @@ form input{
 .popular-content> ul{
     margin-left: 20px;
 }
-
+/* medium  */
+@media screen and (min-width: 601px) and (max-width:991px) {
+    .popular-section{
+        flex-direction: column;
+    }
+    .popular-section .popular-content, .popular-image{
+        width: 100%;
+    }
+    .popular-image img{
+        width: 100%;
+    }
+}
 /* responsive for small device */
 @media screen and (max-width:600px) {
     .popular-section{
@@ -251,6 +291,17 @@ form input{
         "destin-image-f destin-image-g"
     ;
 }
+
+/* medium */
+@media screen and (min-width: 601px) and (max-width:991px) {
+    .destin-image{
+        grid-template-columns: 1fr;
+    }
+    .discount-image img{
+        width: 100%;
+        max-width: 599px;
+    }
+}
 /* responsive for small device */
 @media screen and (max-width:600px) {
     .destin-image{
@@ -301,6 +352,23 @@ form input{
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+/* medium */
+@media screen and (min-width: 601px) and (max-width:991px) {
+    .choose-card-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-a{
+        width: 100%;
+    }
+    .card-b{
+        width: 100%;
+    }
+    .card-c{
+        width: 100%;
+    }
 }
 /* responsive for small device */
 @media screen and (max-width:600px) {
@@ -359,7 +427,25 @@ form input{
     top: 20%;
     left: 53%;
 }
+/* medium */
+@media screen and (min-width: 601px) and (max-width:991px) {
+    .discount-image{
+        position: relative;
+    }
+   .discount-image img{
+    width: 100%;
+    height: 35rem;
+   }
+    .dis-des{
+        width: 100%;
+        position: absolute;
+        top: 25%;
+        left: -13%;
+    }
+    .discount-card{
 
+    }
+}
 /* responsive for small device */
 @media screen and (max-width:600px) {
     .discount-image{
@@ -402,6 +488,20 @@ form input{
 }
 .perfect-image img{
     width: 100%;
+}
+
+/* medium */
+@media screen and (min-width: 601px) and (max-width:991px) {
+    .perfect-section{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .perfect-content{
+        width: 100%;
+    }
+    .perfect-image{
+        width: 100%;
+    }
 }
 /* responsive for small device */
 @media screen and (max-width:600px) {
@@ -457,7 +557,15 @@ form input{
     height: 100%;
     width: 100%;
 }
-
+/* medium  */
+@media screen and (min-width: 601px) and (max-width:991px) {
+    .news-letter-section{
+        flex-direction: column;
+    }
+    .news-input{
+        width: 100%;
+    }
+}
 /* responsive for small device */
 @media screen and (max-width:600px) {
     .news-letter-section{
