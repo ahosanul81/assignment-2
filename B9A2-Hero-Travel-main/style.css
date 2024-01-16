@@ -131,9 +131,7 @@ nav ul li a{
 .banner-content h1{
     padding: 110px 0px 20px 0px;
 }
-.banner-content > p{
-    color: white;
-}
+
 form{
     padding: 20px 0px 110px 0px;
 }
@@ -253,6 +251,7 @@ form input{
         "destin-image-f destin-image-g"
     ;
 }
+/* responsive for small device */
 @media screen and (max-width:600px) {
     .destin-image{
         grid-template-columns: 1fr;
@@ -303,8 +302,22 @@ form input{
     justify-content: center;
     width: 100%;
 }
-
-
+/* responsive for small device */
+@media screen and (max-width:600px) {
+    .choose-card-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-a{
+        width: 100%;
+    }
+    .card-b{
+        width: 100%;
+    }
+    .card-c{
+        width: 100%;
+    }
+}
 
 
 
@@ -347,6 +360,29 @@ form input{
     left: 53%;
 }
 
+/* responsive for small device */
+@media screen and (max-width:600px) {
+    .discount-image{
+        position: relative;
+    }
+   .discount-image img{
+    width: 100%;
+    min-height: 40rem;
+   }
+    .dis-des{
+        position: absolute;
+        top: -1rem;
+       
+    }
+
+}
+
+
+
+
+
+
+
 
 /* perfect section */
 .perfect-section{
@@ -367,8 +403,19 @@ form input{
 .perfect-image img{
     width: 100%;
 }
-
-
+/* responsive for small device */
+@media screen and (max-width:600px) {
+    .perfect-section{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .perfect-content{
+        width: 100%;
+    }
+    .perfect-image{
+        width: 100%;
+    }
+}
 
 
 /* news letter section */
@@ -411,8 +458,15 @@ form input{
     width: 100%;
 }
 
-
-
+/* responsive for small device */
+@media screen and (max-width:600px) {
+    .news-letter-section{
+        flex-direction: column;
+    }
+    .news-input{
+        width: 100%;
+    }
+}
 
 
 
